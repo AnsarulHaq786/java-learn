@@ -1,0 +1,7 @@
+Objective: TO BE FAMILIAR WITH JAVA BASIC
+
+1. WAP to find the area of triangle.
+2. WAP to check if the input string is palindrome.
+3. WAP to count the total number odd digits in a number entered by user.
+4. WAP to input a sentence and display it in alternating cases.
+5. WAP to count total vowel characters in a string entered by user.
