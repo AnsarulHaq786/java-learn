@@ -3,8 +3,13 @@ class vowel{
     private String str;
     public vowel(){
         Scanner sc=new Scanner(System.in);
-        System.out.println("Enter a string:");
-        str=sc.nextLine();
+        try{
+            System.out.println("Enter a string:");
+            str=sc.nextLine();    
+        }
+        finally{
+            sc.close();
+        }
     }
     public int vowelCounter(){
         int count=0;

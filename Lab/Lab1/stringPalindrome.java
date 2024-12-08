@@ -3,8 +3,13 @@ class palindrome{
     private String str;
     public void setData(){
         Scanner sc = new Scanner(System.in);
-        System.out.println("Enter a string:");
-        str=sc.nextLine();
+        try{
+            System.out.println("Enter a string:");
+            str=sc.nextLine();
+        }
+        finally{
+            sc.close();
+        }
     }
     public boolean checkPalindrome(){
         String revStr = "";

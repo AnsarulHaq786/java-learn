@@ -6,10 +6,15 @@ class triangle{
     private double area;
     public void setData(){
         Scanner sc = new Scanner(System.in);
-        System.out.println("Enter three sides of triangle:");
-        a=sc.nextDouble();
-        b=sc.nextDouble();
-        c=sc.nextDouble();
+        try{
+            System.out.println("Enter three sides of triangle:");
+            a=sc.nextDouble();
+            b=sc.nextDouble();
+            c=sc.nextDouble();           
+        }
+        finally{
+            sc.close();
+        }
     }
     public double calculateArea(){
         double s=(a+b+c)/2;

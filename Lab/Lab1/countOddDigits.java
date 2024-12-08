@@ -3,8 +3,13 @@ class number{
     private int number;
     public void setData(){
         Scanner sc = new Scanner(System.in);
-        System.out.println("Enter any number");
-        number=sc.nextInt();
+        try{
+            System.out.println("Enter any number");
+            number=sc.nextInt();
+        }
+        finally{
+            sc.close();
+        }
     }
     public int countOdd(){
         int count=0;

@@ -3,8 +3,13 @@ class cases{
     private String str;
     public void setData(){
         Scanner sc=new Scanner(System.in);
-        System.out.println("Enter any string:");
-        str=sc.nextLine();
+        try{
+            System.out.println("Enter any string:");
+            str=sc.nextLine();
+        }
+        finally{
+            sc.close();
+        }
     }
     public String caseAlternator(){
         String newStr="";
