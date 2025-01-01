@@ -11,10 +11,15 @@ class quadraticEquation{
     private double a, b, c;
     public void setData(){
         Scanner sc=new Scanner(System.in);
-        System.out.println("Enter coefficient of x^2, x and constant:");
-        a=sc.nextDouble();
-        b=sc.nextDouble();
-        c=sc.nextDouble();
+        try{ 
+            System.out.println("Enter coefficient of x^2, x and constant:");
+            a=sc.nextDouble();
+            b=sc.nextDouble();
+            c=sc.nextDouble();
+        }
+        finally{
+            sc.close();
+        }
     }
     public void calcRoots(){
         double r1 = (-b+Math.sqrt(Math.pow(b, 2)-4*a*c))/2*a;
